@@ -1,0 +1,22 @@
+[
+  {
+    "title": "UMass Dining Engine",
+    "details": "AI meal planner that ingests live dining hall menus and filters for dietary preferences, helping 30k+ students decide meals faster.",
+    "stack": "Java · Spring Boot · React · PostgreSQL · Redis · Python"
+  },
+  {
+    "title": "Poker IQ Trainer",
+    "details": "Texas Hold’em practice environment with Monte Carlo opponents and WebAssembly simulations to teach pot odds and EV.",
+    "stack": "TypeScript · React · WebAssembly · Node.js"
+  },
+  {
+    "title": "Medical Insight Bot",
+    "details": "RAG chatbot built with FastAPI and pgvector to rank diagnoses from a medical knowledge base while comparing GPT-4o vs. Gemini outputs.",
+    "stack": "Python · FastAPI · React · PostgreSQL · pgvector"
+  },
+  {
+    "title": "Subscription Tracker",
+    "details": "Manager that tracks recurring costs, aggregates monthly/yearly totals, and alerts for expiring trials via a Javalin API.",
+    "stack": "Java · Javalin · PostgreSQL · JavaScript · HTML/CSS"
+  }
+]

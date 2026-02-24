@@ -1,0 +1,29 @@
+[
+  {
+    "company": "ChitChat Workplace",
+    "role": "Co-Founder / Software Engineer",
+    "link": "https://www.chitchatworkplace.com",
+    "description": [
+      "Built the Go/WebSocket core for a 50k-concurrent-user messaging platform that launched enterprise pilots in under 90 days.",
+      "Implemented Kafka/Redis event pipelines and Kubernetes autoscaling to keep reactions, typing indicators, and AI-assisted drafting reliable."
+    ]
+  },
+  {
+    "company": "GBCS Group",
+    "role": "Software Engineering Intern",
+    "link": "https://www.gbcs.group",
+    "description": [
+      "Replaced eight REST endpoints with a GraphQL gateway using DataLoader batching and gRPC-friendly internals, cutting DB queries 60%.",
+      "Optimized dashboards with indexes and Redis caching while adding CI/Sentry tooling that reduced reported bugs per sprint."
+    ]
+  },
+  {
+    "company": "UMass Amherst – Autonomous Learning Lab",
+    "role": "Undergraduate Research Assistant",
+    "link": "https://www.cs.umass.edu/research/labs/autonomous-learning-lab",
+    "description": [
+      "Stress-tested multi-agent LLM frameworks with a Python harness, surfacing 14 failure patterns across 10k+ simulations.",
+      "Tripled log-processing throughput with Ray/Pandas and automated failure triage to keep researchers focused on agent reliability."
+    ]
+  }
+]
