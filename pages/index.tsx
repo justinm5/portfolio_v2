@@ -316,7 +316,7 @@ const Home: NextPage = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="flex flex-col md:flex-row items-start gap-6 p-6 font-crimson"
+                className="flex flex-col md:flex-row items-start gap-6 py-6 px-0 font-crimson pl-3 md:pl-4"
               >
                 <div className="text-left">
                   <h3 className="text-xl font-semibold text-white">
@@ -343,7 +343,7 @@ const Home: NextPage = () => {
             {experience.map((exp, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-2 p-6 font-crimson"
+                className="flex flex-col gap-2 py-6 px-0 font-crimson pl-3 md:pl-4"
               >
                 <div className="text-left">
                   <h3 className="text-xl font-semibold text-white">

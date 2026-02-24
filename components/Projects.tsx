@@ -20,7 +20,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="flex flex-col gap-2 border-b border-white/10 pb-4 pt-4 font-crimson last:border-b-0"
+            className="flex flex-col gap-2 border-b border-white/10 pb-4 pt-4 font-crimson last:border-b-0 pl-3 md:pl-4"
           >
             <div className="flex flex-wrap items-baseline gap-3">
               <h3 className="text-xl font-semibold text-white">{project.title}</h3>
