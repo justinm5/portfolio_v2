@@ -8,34 +8,4 @@ script = ""
 [[actions]]
 name = "Run"
 icon = "run"
-command = '''
-npm install
-npm run dev
-'''
-
-[[actions]]
-name = "run"
-icon = "tool"
 command = "npm run dev"
-
-[[actions]]
-name = "push"
-icon = "tool"
-command = '''
-git add .
-git commit -m "Describe changes"
-git remote add origin https://github.com/justinm5/portfolio_v2.git
-git branch -M main
-git push -u origin main
-'''
-
-[[actions]]
-name = "push"
-icon = "tool"
-command = '''
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/justinm5/portfolio_v2.git
-git branch -M main
-git push -u origin main
-'''

@@ -4,26 +4,39 @@
     "role": "Co-Founder / Software Engineer",
     "link": "https://www.chitchatworkplace.com",
     "description": [
-      "Built the Go/WebSocket core for a 50k-concurrent-user messaging platform that launched enterprise pilots in under 90 days.",
-      "Implemented Kafka/Redis event pipelines and Kubernetes autoscaling to keep reactions, typing indicators, and AI-assisted drafting reliable."
+      "Built the real-time backend for a 100K-concurrent messaging platform and launched enterprise pilots in 90 days."
     ]
   },
   {
     "company": "GBCS Group",
     "role": "Software Engineering Intern",
-    "link": "https://www.gbcs.group",
+    "link": "https://www.gbcsgroup.com/",
     "description": [
-      "Replaced eight REST endpoints with a GraphQL gateway using DataLoader batching and gRPC-friendly internals, cutting DB queries 60%.",
-      "Optimized dashboards with indexes and Redis caching while adding CI/Sentry tooling that reduced reported bugs per sprint."
+      "Rebuilt backend APIs with GraphQL and caching, cutting database load 60% and reducing production bugs."
     ]
   },
   {
     "company": "UMass Amherst – Autonomous Learning Lab",
     "role": "Undergraduate Research Assistant",
-    "link": "https://www.cs.umass.edu/research/labs/autonomous-learning-lab",
+    "link": "https://all.cs.umass.edu/",
     "description": [
-      "Stress-tested multi-agent LLM frameworks with a Python harness, surfacing 14 failure patterns across 10k+ simulations.",
-      "Tripled log-processing throughput with Ray/Pandas and automated failure triage to keep researchers focused on agent reliability."
+      "Stress-tested multi-agent LLM systems, identifying 14 failure modes across 10k+ simulations and improving analysis speed 3×."
     ]
-  }
+  },
+  {
+      "company": "BUILD UMass",
+      "role": "Software Engineer",
+      "link": "https://www.buildumass.com/",
+      "description": [
+        "Built a campus events platform used to create and discover student events, improving search speed and real-time updates."
+      ]
+  },
+  {
+      "company": "NRHS Robotics (FIRST & VEX)",
+      "role": "Team Captain",
+      "link": "https://www.instagram.com/unreal7730/?hl=en",
+      "description": [
+        "Led software development for competition robots, building C++ vision and path-planning systems while coordinating code reviews and team execution."
+      ]
+   }
 ]

@@ -226,20 +226,12 @@ const Home: NextPage = () => {
               Hi, I'm Justin
             </h1>
 
-            <div className="text-xl text-slate-200 space-y-4 text-left">
+            <div className="text-xl text-slate-200 space-y-8 text-left">
               <p>
-                I'm an engineer studying Computer Science and Mathematics at the
-                University of Massachusetts Amherst.
+                I study Computer Science and Math at the
+                University of Massachusetts Amherst
               </p>
-              <p>
-                I build systems that combine real-time data, automation, and
-                AI to reduce friction for teams and learners.
-              </p>
-              <p>
-                Interests include distributed systems, agentic AI, and scalable
-                web platforms.
-              </p>
-              <p>Reach me at justinmmanoj@gmail.com</p>
+              <p>You can reach me at justinmmanoj [at] gmail [dot] com.</p>
             </div>
           </div>
         </div>
