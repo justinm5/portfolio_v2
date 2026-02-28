@@ -5,6 +5,7 @@ import { loadSlim } from "tsparticles-slim";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import Link from "next/link";
+import Image from "next/image";
 import Projects from "../components/Projects";
 import projects_data from "../data/projects.json";
 import experience_data from "../data/experience.json";
@@ -15,6 +16,7 @@ interface ExperienceType {
   role: string;
   link: string;
   description: string[];
+  logo?: string; // path to public asset, e.g., /logos/company.png
 }
 
 interface EducationType {
@@ -22,6 +24,7 @@ interface EducationType {
   link: string;
   degree: string;
   description: string;
+  logo?: string; // path to public asset, e.g., /logos/school.png
 }
 
 const skillCategories = [
@@ -318,6 +321,22 @@ const Home: NextPage = () => {
                 key={index}
                 className="flex flex-col md:flex-row items-start gap-6 py-6 px-0 font-crimson pl-3 md:pl-4"
               >
+                <div className="w-32 h-32 md:w-36 md:h-36 rounded-xl border border-white/20 bg-white/5 flex items-center justify-center overflow-hidden shrink-0 transition-shadow duration-200 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]">
+                  {edu.logo ? (
+                    <Image
+                      src={edu.logo}
+                      alt={`${edu.school} logo`}
+                      width={128}
+                      height={128}
+                      className="object-contain w-full h-full p-2"
+                      priority={index === 0}
+                    />
+                  ) : (
+                    <span className="text-xs uppercase tracking-widest text-slate-400">
+                      Logo
+                    </span>
+                  )}
+                </div>
                 <div className="text-left">
                   <h3 className="text-xl font-semibold text-white">
                     <Link
@@ -328,7 +347,14 @@ const Home: NextPage = () => {
                     </Link>
                   </h3>
                   <p className="text-slate-400">{edu.degree}</p>
-                  <p className="text-slate-200 mt-2">{edu.description}</p>
+                  {edu.description.startsWith("Relevant Coursework:") ? (
+                    <p className="text-slate-200 mt-2">
+                      <span className="font-semibold">Relevant Coursework:</span>{" "}
+                      {edu.description.replace("Relevant Coursework:", "").trim()}
+                    </p>
+                  ) : (
+                    <p className="text-slate-200 mt-2">{edu.description}</p>
+                  )}
                 </div>
               </div>
             ))}
@@ -343,23 +369,41 @@ const Home: NextPage = () => {
             {experience.map((exp, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-2 py-6 px-0 font-crimson pl-3 md:pl-4"
+                className="flex flex-col md:flex-row items-start gap-4 py-6 px-0 font-crimson pl-3 md:pl-4"
               >
-                <div className="text-left">
-                  <h3 className="text-xl font-semibold text-white">
-                    <Link
-                      href={exp.link}
-                      className="hover:underline hover:text-white transition-colors"
-                    >
-                      {exp.company}
-                    </Link>
-                  </h3>
-                  <p className="text-slate-300">{exp.role}</p>
+                <div className="w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center overflow-hidden shrink-0 transition-shadow duration-200 hover:shadow-[0_0_18px_rgba(255,255,255,0.15)]">
+                  {exp.logo ? (
+                    <Image
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      width={96}
+                      height={96}
+                      className="object-contain w-full h-full p-2"
+                      priority={index === 0}
+                    />
+                  ) : (
+                    <span className="text-xs uppercase tracking-widest text-slate-400">
+                      Logo
+                    </span>
+                  )}
                 </div>
-                <div className="text-slate-200 space-y-1">
-                  {exp.description.map((desc, i) => (
-                    <p key={i}>{desc}</p>
-                  ))}
+                <div className="flex flex-col gap-2 text-left">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">
+                      <Link
+                        href={exp.link}
+                        className="hover:underline hover:text-white transition-colors"
+                      >
+                        {exp.company}
+                      </Link>
+                    </h3>
+                    <p className="text-slate-300">{exp.role}</p>
+                  </div>
+                  <div className="text-slate-200 space-y-1">
+                    {exp.description.map((desc, i) => (
+                      <p key={i}>{desc}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

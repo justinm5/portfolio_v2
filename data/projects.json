@@ -1,7 +1,7 @@
 [
   {
     "title": "UMass Dining Engine",
-    "details": "AI meal recommender that ingests live dining hall menus and filters for dietary preferences, helping 30k+ students decide meals faster.",
+    "details": "AI meal recommender that ingests dining hall menus and filters for dietary preferences, helping 30k+ students decide meals faster.",
     "stack": "Java · Spring Boot · React · PostgreSQL · Redis · Python"
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "title": "Medical Insight Bot",
-    "details": "RAG chatbot built with FastAPI and pgvector to rank diagnoses from a medical knowledge base while comparing GPT-4o vs. Gemini outputs.",
+    "details": "RAG chatbot built with FastAPI and pgvector to rank diagnoses from a medical knowledge base while comparing AI outputs.",
     "stack": "Python · FastAPI · React · PostgreSQL · pgvector"
   },
   {

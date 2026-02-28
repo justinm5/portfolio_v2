@@ -4,39 +4,35 @@
     "role": "Co-Founder / Software Engineer",
     "link": "https://www.chitchatworkplace.com",
     "description": [
-      "Built the real-time backend for a 100K-concurrent messaging platform and launched enterprise pilots in 90 days."
-    ]
+      "Built the real-time backend for a 100k+ user concurrent messaging platform and launched enterprise pilots in 90 days."
+    ],
+    "logo": "/logos/chitchat.png"
   },
   {
     "company": "GBCS Group",
     "role": "Software Engineering Intern",
     "link": "https://www.gbcsgroup.com/",
     "description": [
-      "Rebuilt backend APIs with GraphQL and caching, cutting database load 60% and reducing production bugs."
-    ]
+      "Rebuilt backend APIs with GraphQL and caching, cutting database load 65% and reducing production bugs."
+    ],
+    "logo": "/logos/gbcs.png"
   },
   {
     "company": "UMass Amherst – Autonomous Learning Lab",
     "role": "Undergraduate Research Assistant",
     "link": "https://all.cs.umass.edu/",
     "description": [
-      "Stress-tested multi-agent LLM systems, identifying 14 failure modes across 10k+ simulations and improving analysis speed 3×."
-    ]
+      "Tested multi-agent LLM systems, finding 14 failure modes across 10k+ simulations and improving analysis speed 3x."
+    ],
+    "logo": "/logos/umass-research.png"
   },
   {
       "company": "BUILD UMass",
       "role": "Software Engineer",
       "link": "https://www.buildumass.com/",
       "description": [
-        "Built a campus events platform used to create and discover student events, improving search speed and real-time updates."
-      ]
-  },
-  {
-      "company": "NRHS Robotics (FIRST & VEX)",
-      "role": "Team Captain",
-      "link": "https://www.instagram.com/unreal7730/?hl=en",
-      "description": [
-        "Led software development for competition robots, building C++ vision and path-planning systems while coordinating code reviews and team execution."
-      ]
-   }
+        "Built campus events platform to create and discover student events, improving search speed and real-time updates."
+      ],
+      "logo": "/logos/build-umass.png"
+  }
 ]
