@@ -3,7 +3,9 @@
     "school": "University of Massachusetts Amherst",
     "link": "https://www.umass.edu/",
     "degree": "B.S in Computer Science and Mathematics · May 2027",
-    "description": "Relevant Coursework: Data Structures & Algorithms, Operating Systems, Distributed Systems, Database Systems, Machine Learning, Computer Networks, Software Engineering, Web Programming, Search Engines, Combinatorics, Discrete Mathematics",
+    "description": "Relevant Coursework: Algorithms & Data Structures, Distributed Systems, Operating Systems, Databases, Computer Networks & Security, Machine Learning, Web Programming, Discrete Mathematics",
+    "awards": "Dean's List, Chancellor's Award, NYS Award for Academic Excellence, AP Scholar with Distinction, National Merit Commended Scholar, Commonwealth Honors College",
     "logo": "/logos/umass.png"
   }
 ]
+

@@ -24,6 +24,7 @@ interface EducationType {
   link: string;
   degree: string;
   description: string;
+  awards?: string; // optional awards line, shown beneath description
   logo?: string; // path to public asset, e.g., /logos/school.png
 }
 
@@ -354,6 +355,12 @@ const Home: NextPage = () => {
                     </p>
                   ) : (
                     <p className="text-slate-200 mt-2">{edu.description}</p>
+                  )}
+                  {edu.awards && (
+                    <p className="text-slate-200 mt-1">
+                      <span className="font-semibold">Awards/Honors:</span>{" "}
+                      {edu.awards.replace(/^[Aa]wards:\s*/, "").trim()}
+                    </p>
                   )}
                 </div>
               </div>
